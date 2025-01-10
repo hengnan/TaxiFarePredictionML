@@ -37,22 +37,22 @@ query_df = spark.sql("""
 
     CAST(fareamount AS DOUBLE) AS fareamount_double,
     CAST(fareamount AS STRING) AS fareamount_string,
-
-    origin_block_latitude,
+    
+    CAST(origin_block_latitude AS DOUBLE) AS origin_block_latitude_double,
     CAST(origin_block_latitude AS STRING) AS origin_block_latitude_string,
-
-    origin_block_longitude,
+    
+    CAST(origin_block_longitude AS DOUBLE) AS origin_block_longitude_double,
     CAST(origin_block_longitude AS STRING) AS origin_block_longitude_string,
-    destination_block_latitude,
-    CAST(destination_block_latitude AS STRING)
-      AS destination_block_latitude_string,
-
-    destination_block_longitude,
-    CAST(destination_block_longitude AS STRING)
-      AS destination_block_longitude_string,
-
+    
+    CAST(destination_block_latitude AS DOUBLE) AS destination_block_latitude_double,
+    CAST(destination_block_latitude AS STRING) AS destination_block_latitude_string,
+    
+    CAST(destination_block_longitude AS DOUBLE) AS destination_block_longitude_double,
+    CAST(destination_block_longitude AS STRING) AS destination_block_longitude_string,
+    
     CAST(mileage AS DOUBLE) AS mileage_double,
     CAST(mileage AS STRING) AS mileage_string
+
 
  FROM dc_taxi_csv
 
