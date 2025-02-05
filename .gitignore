@@ -4,3 +4,9 @@
 /OpenDataDC_Taxi_2018/
 /OpenDataDC_Taxi_2019/
 .idea
+example.py
+/logs
+linear_regression_gpu.py
+linear_regression.py
+dctaxi_withpytorch_lighting.py
+__pycache__/
